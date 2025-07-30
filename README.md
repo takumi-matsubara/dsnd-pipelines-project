@@ -1,3 +1,6 @@
+# Important Note
+Submission repository is main branch. The develop branch is for work, so please refer to the main branch.
+
 # Data Science Pipeline Project
 
 Binary-classification pipeline that predicts whether a customer recommends a
