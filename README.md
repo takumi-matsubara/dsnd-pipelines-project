@@ -18,16 +18,6 @@ git clone git clone https://github.com/<your-fork>/dsnd-pipelines-project.git
 ```
 3. Open the cloned folder, then follow Installation section.
 
-### Dependencies
-
-- Python 3.9+
-- scikit-learn
-- spaCy
-- Pandas
-- Numpy
-- Matplotlib
-- Seaborn
-
 ### Installation
 
 1. Create & activate a virtual environment
@@ -48,6 +38,15 @@ pip install -r /requirements.txt
 ```bash
 jupyter notebook
 ```
+### Dependencies
+
+- Python 3.9+
+- scikit-learn
+- spaCy
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
 
 ## Testing
 
