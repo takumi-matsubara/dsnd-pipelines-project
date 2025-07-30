@@ -1,52 +1,74 @@
-# README Template
+# Data Science Pipeline Project
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+Binary-classification pipeline that predicts whether a customer recommends a
+product (`Recommended IND`) using numerical, categorical, and text features
+from 18 k retail reviews.
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+Fork and clone the repository, create a virtual environment, install dependencies, and
+launch the notebook.
+1. Press fork button at the upper right of your screen.
+2. Run the following git command at your local CLI.
+```bash
+git clone git clone https://github.com/<your-fork>/dsnd-pipelines-project.git
+```
+3. Open the cloned folder, then follow Installation section.
 
 ### Dependencies
 
-```
-Examples here
-```
+- Python 3.9+
+- scikit-learn
+- spaCy
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
+1. Create & activate a virtual environment
+```bash
+python -m venv venv
+# macOS / Linux
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
 ```
-Give an example here
+
+2. Install Python packages
+```bash
+pip install -r /requirements.txt
+```
+
+3. Launch jupyter notebook
+```bash
+jupyter notebook
 ```
 
 ## Testing
 
-Explain the steps needed to run any automated tests
+Run every cell in starter.ipynb.
+The notebook performs cross-validation, hyper-parameter tuning, and evaluates
+the final model on a hold-out test set.
 
 ### Break Down Tests
 
-Explain what each test does and why
-
-```
-Examples here
-```
+- RandomizedSearchCV (cv = 4, n_iter = 12) – trains 12 random hyper-parameter(In this case, all combinations of parameters) combinations with 4-fold cross-validation.
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+Deliverables for grading:
+
+- starter.ipynb – fully executed with visible outputs.
+
+- README.md – this file.
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+- scikit-learn – machine-learning framework
+- spaCy – NLP preprocessing
+- Matplotlib – result visualisation
 
 Include all items used to build project.
 
